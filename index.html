@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankApp</title>
+    <link rel="shortcut icon" href="/imgs/Zenith.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <h2 class="welcome">Log in to get started</h2>
+      <img src="/imgs/Logo.png" width="10%" alt="Logo" />
+      <form class="login">
+        <label>Initial | F.Name</label>
+        <input
+          type="text"
+          placeholder="USER"
+          class="login_input login_input--user"
+        />
+        <input
+          type="password"
+          name="password"
+          class="login_input login_input--pin"
+          placeholder="PIN"
+          maxlength="4"
+        />
+        <button class="login_btn">&#8594;</button>
+      </form>
+    </nav>
+
+    <main class="app">
+      <!-- BALANCE -->
+      <div class="balance">
+        <div>
+          <p class="balance_label">Current balance</p>
+          <p class="balance_date">As of <span class="date">19/09/2022</span></p>
+        </div>
+        <p class="balance_value">₦0000</p>
+      </div>
+      <!-- MOVEMENTS -->
+      <div class="landing-section">
+        <div class="movement-summary">
+          <div class="movements">
+            <div class="movements_row">
+              <div class="movements_type movements_type--deposit">
+                2 deposit
+              </div>
+              <div class="movement-detail">
+                <div class="movements_date">3 days ago</div>
+                <div class="movements_value">₦50000</div>
+              </div>
+            </div>
+            <div class="movements_row">
+              <div class="movements_type movements_type--withdrawal">
+                1 withdrawal
+              </div>
+              <div class="movement-detail">
+                <div class="movements_date">30/12/2022</div>
+                <div class="movements_value">-₦567</div>
+              </div>
+            </div>
+          </div>
+          <!-- SUMMARY -->
+          <div class="summary">
+            <div class="summary-item">
+              <p class="summary_label">In</p>
+              <p class="summary_value summary_value--in">₦0000</p>
+            </div>
+            <div class="summary-item">
+              <p class="summary_label">Out</p>
+              <p class="summary_value summary_value--out">₦0000</p>
+            </div>
+            <div class="summary-item">
+              <p class="summary_label">Interest</p>
+              <p class="summary_value summary_value--interest">₦0000</p>
+            </div>
+            <div class="summary-item">
+              <button class="btn--sort">&#8595; SORT</button>
+            </div>
+          </div>
+        </div>
+        <!-- OPERATION: TRANSFERS -->
+        <div class="aside-operation-all">
+          <div class="operation operation--transfer">
+            <h2>Transfer Money</h2>
+            <form class="form form--transfer">
+              <input type="text" class="form_input form_input--to" />
+              <input type="number" class="form_input form_input--amount" />
+              <button class="form_btn form_btn--transfer">&#8594;</button>
+              <label class="form_label">Transfer to</label>
+              <label class="form_label">Amount</label>
+            </form>
+          </div>
+          <!-- OPERATION: LOAN -->
+          <div class="operation operation--loan">
+            <h2>Request loan</h2>
+            <form class="form form--loan">
+              <input type="number" class="form_input form_input--loan-amount" />
+              <button class="form_btn form_btn--loan">&#8594;</button>
+              <label class="form_label form_label--loan">Amount</label>
+            </form>
+          </div>
+
+          <!-- OPERATION: CLOSE -->
+          <div class="operation operation--close">
+            <h2>Close account</h2>
+            <form class="form form--close">
+              <input type="text" class="form_input form_input--user" />
+              <input
+                type="password"
+                maxlength="4"
+                class="form_input form_input--pin"
+              />
+              <button class="form_btn form_btn--close">&#8594;</button>
+              <label class="form_label">Confirm user</label>
+              <label class="form_label">Confirm PIN</label>
+            </form>
+          </div>
+          <!-- LOGOUT TIMER -->
+          <p class="logout-timer">
+            You will be logged out in <span class="timer">05:00</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
