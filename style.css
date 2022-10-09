@@ -5,6 +5,9 @@
   box-sizing: border-box;
   outline: none;
 }
+#root {
+  overflow-x: hidden;
+}
 
 html {
   font-size: 62.5%;
@@ -16,6 +19,7 @@ body {
   color: #fff;
   height: 100vh;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 /* TOP NAVIGATION  */
@@ -315,6 +319,36 @@ h2 {
   font-weight: 600;
 }
 
+/* REM'S WORK */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-top {
+  align-items: flex-start;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+form div input {
+  margin-bottom: 7px;
+}
+
+form div label {
+  text-align: center;
+  display: block;
+}
+
+.form--transfer button,
+.form--close button {
+  padding: 0px 15px;
+}
 /* ALL MEDIA QUERY MOVEMENTS APPEARS HERE */
 
 @media screen and (max-width: 768px) {
@@ -339,13 +373,28 @@ h2 {
 
 @media screen and (max-width: 400px) {
   .login,
-  label {
+  .login label {
     padding: 5rem;
   }
 }
 
 @media screen and (max-width: 399px) {
-  body {
-    display: none;
+  .flex {
+    flex-direction: column;
+  }
+
+  .items-top {
+    align-items: unset;
+  }
+  .form--transfer,
+  .form--close {
+    gap: unset;
+  }
+  .form--transfer div input,
+  .form--transfer button,
+  .form--close div input,
+  .form--close button {
+    margin-top: 5px;
+    order: 1;
   }
 }

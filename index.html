@@ -89,12 +89,24 @@
         <div class="aside-operation-all">
           <div class="operation operation--transfer">
             <h2>Transfer Money</h2>
-            <form class="form form--transfer">
-              <input type="text" class="form_input form_input--to" />
-              <input type="number" class="form_input form_input--amount" />
+            <form class="form form--transfer flex justify-center items-top">
+              <div class="">
+                <input
+                  type="text"
+                  id="t-money"
+                  class="form_input form_input--to"
+                />
+                <label class="form_label" for="t-money">Transfer to</label>
+              </div>
+              <div>
+                <input
+                  type="number"
+                  id="t-amount"
+                  class="form_input form_input--amount"
+                />
+                <label class="form_label" for="t-amount">Amount</label>
+              </div>
               <button class="form_btn form_btn--transfer">&#8594;</button>
-              <label class="form_label">Transfer to</label>
-              <label class="form_label">Amount</label>
             </form>
           </div>
           <!-- OPERATION: LOAN -->
@@ -110,16 +122,28 @@
           <!-- OPERATION: CLOSE -->
           <div class="operation operation--close">
             <h2>Close account</h2>
-            <form class="form form--close">
-              <input type="text" class="form_input form_input--user" />
-              <input
-                type="password"
-                maxlength="4"
-                class="form_input form_input--pin"
-              />
+            <form class="form form--close flex justify-center items-top">
+              <div>
+                <input
+                  type="text"
+                  id="c-user"
+                  class="form_input form_input--user"
+                />
+                <!-- <br /> -->
+                <label class="form_label" for="c-user">Confirm user</label>
+              </div>
+
+              <div>
+                <input
+                  type="password"
+                  maxlength="4"
+                  class="form_input form_input--pin"
+                  id="c-pin"
+                />
+                <label class="form_label" for="c-pin">Confirm PIN</label>
+              </div>
+
               <button class="form_btn form_btn--close">&#8594;</button>
-              <label class="form_label">Confirm user</label>
-              <label class="form_label">Confirm PIN</label>
             </form>
           </div>
           <!-- LOGOUT TIMER -->
