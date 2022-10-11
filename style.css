@@ -374,7 +374,7 @@ form div label {
 @media screen and (max-width: 400px) {
   .login,
   .login label {
-    padding: 5rem;
+    padding: 4rem 1rem;
   }
 }
 

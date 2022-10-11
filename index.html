@@ -113,9 +113,19 @@
           <div class="operation operation--loan">
             <h2>Request loan</h2>
             <form class="form form--loan">
-              <input type="number" class="form_input form_input--loan-amount" />
-              <button class="form_btn form_btn--loan">&#8594;</button>
-              <label class="form_label form_label--loan">Amount</label>
+              <div>
+                <input
+                  type="number"
+                  id="loan"
+                  class="form_input form_input--loan-amount"
+                />
+                <label class="form_label form_label--loan" for="loan"
+                  >Amount</label
+                >
+              </div>
+              <div>
+                <button class="form_btn form_btn--loan">&#8594;</button>
+              </div>
             </form>
           </div>
 
@@ -129,7 +139,6 @@
                   id="c-user"
                   class="form_input form_input--user"
                 />
-                <!-- <br /> -->
                 <label class="form_label" for="c-user">Confirm user</label>
               </div>
 
