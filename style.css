@@ -32,12 +32,6 @@ nav {
   margin-bottom: 70px;
 }
 
-.welcome {
-  font-size: 1.9rem;
-  font-weight: 500;
-  color: #fff;
-}
-
 .login {
   display: flex;
   position: relative;
@@ -88,6 +82,12 @@ nav {
 .btn--sort:focus {
   outline: none;
   color: #777;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 /* MAIN */
@@ -336,6 +336,7 @@ form div {
   display: flex;
   flex-direction: column;
 }
+
 form div input {
   margin-bottom: 7px;
 }
@@ -349,6 +350,7 @@ form div label {
 .form--close button {
   padding: 0px 15px;
 }
+
 /* ALL MEDIA QUERY MOVEMENTS APPEARS HERE */
 
 @media screen and (max-width: 768px) {

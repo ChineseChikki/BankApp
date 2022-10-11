@@ -1,18 +1,3 @@
-// let customers = [
-//   {
-//     owner: 'Chinese Chikki',
-//     movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
-//     interestRate: 1.2, // %
-//     pin: 2022,
-//   },
-//   {
-//     owner: 'Dike Lucy',
-//     movements: [100_000, 60_000, 2_000, 15_000, 700, -1_000, -50_000, -25_000],
-//     interestRate: 1.5, // %
-//     pin: 2021,
-//   },
-// ];
-
 ('use strict');
 //USER DATA INFORMATION FOR PERFORMANCE OF OPERATION
 const account1 = {
